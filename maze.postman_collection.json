@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "6c0ffa0d-7255-423d-9359-cb50c9884ef6",
+		"name": "maze",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5951691"
+	},
+	"item": [
+		{
+			"name": "create maze",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"width\": 15,\n    \"height\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/maze",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"maze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"width\": 15,\n    \"height\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/game/402880e4875ad15a01875ad17a480000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"game",
+						"402880e4875ad15a01875ad17a480000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getGameById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"width\": 15,\n    \"height\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/game/402880e4875af99a01875af9bd0f0000/402880e4875af99a01875af9fa5e0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"game",
+						"402880e4875af99a01875af9bd0f0000",
+						"402880e4875af99a01875af9fa5e0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doOperation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"operation\": \"GoEast\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/game/402880e4875af99a01875af9bd0f0000/402880e4875af99a01875af9fa5e0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"game",
+						"402880e4875af99a01875af9bd0f0000",
+						"402880e4875af99a01875af9fa5e0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMazebyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/maze/402880e4875aa9e901875aabd07f0000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"maze",
+						"402880e4875aa9e901875aabd07f0000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewMazebyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/maze/402880e4875aa9e901875aabd07f0000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"maze",
+						"402880e4875aa9e901875aabd07f0000"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
